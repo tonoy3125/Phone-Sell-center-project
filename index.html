@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iphone Sell Center</title>
+    <!-- Tailwind Daisy Ui Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS Style -->
     <style>
         .font-poppin {
             font-family: 'Poppins', sans-serif;
@@ -33,7 +39,7 @@
                 passages of Lorem
                 Ipsum available, <br> but the majority have suffered alteration in some form, by injected humou.</p>
             <div class="text-center">
-                <button class="btn bg-[#0D6EFD] text-white">Sign in</button>
+                <button class="btn bg-[#0D6EFD] text-white">Buy Now</button>
             </div>
         </div>
     </header>
@@ -44,28 +50,28 @@
             <div class="flex justify-center">
                 <input class="lg:w-3/12 lg:pt-[17px] lg:pb-[17px] pl-3 lg:pl-5 rounded-lg bg-[#100F0F0D] text-[#706F6F]"
                     type="search" name="" id="" placeholder="Search your phone">
-                <button class="btn bg-[#0D6EFD] text-white lg:pt-5 lg:pb-8 lg:pl-8 lg:pr-8 text-center">Sign in</button>
+                <button class="btn bg-[#0D6EFD] text-white lg:pt-5 lg:pb-8 lg:pl-8 lg:pr-8 text-center">Search</button>
             </div>
         </section>
     </main>
 
     <footer class="container mx-auto bg-[#0D6EFD0D] pb-28 mt-20">
         <div class="flex lg:justify-between flex-col lg:flex-row justify-center gap-4">
-            <div class="lg:ml-36">
-                <h1 class="text-5xl lg:mt-28 mb-3">Hot Gadgets</h1>
-                <p class="text-lg text-[#706F6F] lg:mb-12">You can definitely work.</p>
+            <div class="lg:ml-36 text-center lg:text-start">
+                <h1 class="text-5xl mt-6 lg:mt-28">Hot Gadgets</h1>
+                <p class="text-lg text-[#706F6F] lg:mb-12 mt-3">You can definitely work.</p>
             </div>
-            <div class="flex items-center gap-5">
-                <div class="flex items-center justify-start gap-4">
-                    <i class="text-2xl fa-brands fa-square-facebook" style="color: #005eff;"></i>
-                    <i class="text-2xl fa-brands fa-twitter" style="color: #005eff;"></i>
-                    <i class="text-2xl fa-brands fa-instagram" style="color: #e3a945;"></i>
+            <div class="flex items-center gap-7 ml-20 lg:ml-0">
+                <div class="flex items-center justify-start gap-4 lg:mt-16">
+                    <i class="text-2xl fa-brands fa-square-facebook" style="color: rgb(85, 85, 170);"></i>
+                    <i class="text-2xl fa-brands fa-twitter" style="color: skyblue;"></i>
+                    <i class="text-2xl fa-brands fa-instagram" style="color: #e69915;"></i>
                 </div>
-                <button class="btn bg-blue-500 text-white mt-28 mr-36 mb-12">Join Premium</button>
+                <button class="btn bg-blue-500 text-white mt-12 lg:mt-28 mr-36 mb-12">Join Premium</button>
             </div>
         </div>
-        <hr class="lg:mb-12 lg:w-[1260px] lg:h-[1px] lg:mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-36 lg:ml-36">
+        <hr class="mb-5 lg:mb-12 lg:w-[1260px] lg:h-[1px] lg:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-36 lg:ml-36 text-center lg:text-start">
             <div class="lg:text-lg">
                 <a class="block text-[#706F6F]" href="">Product</a>
                 <a class="block text-[#706F6F]" href="">Browse jobs</a>
@@ -96,7 +102,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="phone.js"></script>
 </body>
 
 </html>
