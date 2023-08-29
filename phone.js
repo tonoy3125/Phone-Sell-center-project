@@ -86,16 +86,16 @@ const showPhoneDetails = (phone) => {
     const phoneDetails = document.createElement('div')
     phoneDetails.innerHTML = `
     <img class="blok mx-auto mb-3" src="${phone.image}" alt="">
-        <h2 class="text-2xl font-semibold">${phone.name}</h2>
+        <h2 class="text-3xl font-semibold">${phone.name}</h2>
         <p class="text-lg my-2 text-[#706F6F]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Storage :</span> ${phone.mainFeatures.storage}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Display Size :</span> ${phone.mainFeatures.displaySize}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Chipset :</span> ${phone.mainFeatures.chipSet}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Memory : </span>${phone.mainFeatures.memory}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Slug : </span> ${phone.slug}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Release data : </span> ${phone.releaseDate}</p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">Brand :</span> ${phone.brand} </p>
-        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold">GPS :</span>${phone.GPS} </p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Storage :</span> ${phone.mainFeatures.storage}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Display Size :</span> ${phone.mainFeatures.displaySize}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Chipset :</span> ${phone.mainFeatures.chipSet}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Memory : </span>${phone.mainFeatures.memory}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Slug : </span> ${phone.slug}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Release data : </span> ${phone.releaseDate}</p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">Brand :</span> ${phone.brand} </p>
+        <p class="text-xs my-2 text-[#706F6F]"><span class="font-semibold text-black">GPS :</span>${phone.others.GPS} </p>
         <div class="text-center"><button class="btn bg-[#0D6EFD] text-white">Buy Now</button></div>
     `;
     showPhoneDetails.appendChild(phoneDetails)
