@@ -48,14 +48,33 @@
             <div class="flex justify-center">
                 <input class="lg:w-3/12 lg:pt-[17px] lg:pb-[17px] pl-3 lg:pl-5 rounded-lg bg-[#100F0F0D] text-[#706F6F]"
                     type="search" name="" id="search-field" placeholder="Search your phone">
-                <button onclick="handleSearch()" class="btn bg-[#0D6EFD] text-white lg:pt-5 lg:pb-8 lg:pl-8 lg:pr-8 text-center">Search</button>
+                <button onclick="handleSearch()"
+                    class="btn bg-[#0D6EFD] text-white lg:pt-5 lg:pb-8 lg:pl-8 lg:pr-8 text-center">Search</button>
             </div>
         </section>
         <section class="container mx-auto mt-12">
+            <div id="loading-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner text-blue-950 loading-lg"></span>
+            </div>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             </div>
+            <div id="show-all-container" class="hidden text-center my-8">
+                <button onclick="handleShowAll()"
+                    class="btn bg-[#0D6EFD] text-white lg:pt-5 lg:pb-8 lg:pl-8 lg:pr-8">Show All</button>
+            </div>
         </section>
+
+        <!-- Show The modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+                <div id="show-details-container">
+
+                </div>
+            </form>
+        </dialog>
+
     </main>
 
     <footer class="container mx-auto bg-[#0D6EFD0D] pb-28 mt-20">
